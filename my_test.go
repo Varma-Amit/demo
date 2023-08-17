@@ -18,7 +18,7 @@ func TestTerraformBasicExample(t *testing.T) {
 	terraformOptions := terraform.WithDefaultRetryableErrors(t, &terraform.Options{
 		// website::tag::1::Set the path to the Terraform code that will be tested.
 		// The path to where our Terraform code is located
-		TerraformDir: "../terratest/terraform_module",
+		TerraformDir: "./terraform_module",
 
 		// Variables to pass to our Terraform code using -var options
 		Vars: map[string]interface{}{
